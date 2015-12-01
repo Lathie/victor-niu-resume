@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Victor}{Niu}{ \urlstyle{same}\url{} \\%Add URL Here
+\href{mailto:bniu2@illinois.edu}{bniu2@illinois.edu} | 612.666.3562
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+
+\section{Education} 
+
+\subsection{UIUC}
+\descript{BS in Engineering Computer Science}
+\location{2015 - Present}
+\location{Expected June 2018 \\ Cum. GPA: 4.0}
+\sectionsep
+
+\subsection{University of Minnesota - Twin Cities}
+\descript{Non-Degree Seeking Programs}
+\location{2011-2015}
+\location{University of Minnesota Talented Youth Math Program Graduate} 
+College Algebra, Geometry, Pre-calculus, Calculus, Linear Algebra, Differential Equations, Multivariable Calculus \\
+\sectionsep
+\location{Post Secondary Enrollment Options}
+Introduction to C/C++ for Scientists and Engineers, Introduction to Shakespeare, Introduction to Algorithms, Data Structures and Program Development, Machine Architecture, Cryptography and Number Theory
+\sectionsep
+
+\subsection{Eden Prairie High School}
+\location{Honors Grad. May 2015}\location{2014 State AP Scholar}
+23 AP Tests Completed \\
+National Honor Society Inductee \\
+National Merit Scholar Finalist
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Lathie}{\custombold{Lathie}} \\
+Devpost:// \href{http://devpost.com/Lathie}{\custombold{Lathie}} \\
+LinkedIn://  \href{www.linkedin.com/in/victorniu
+}{\custombold{victorniu}} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+Twitter://  \href{https://twitter.com/WhatIsYaoi}{\custombold{@WhatIsYaoi}} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Experienced:}
+Java \textbullet{}   Python \textbullet{} JavaScript \textbullet{} HTML \\
+CSS + Bootstrap \textbullet{} C++/C \textbullet{} \LaTeX\ \\ 
+\location{Familiar:}
+Android \textbullet{} JavaScript \textbullet{} Ruby \textbullet{} Visual Basic
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Hackathons
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hackathon Projects | 2015 Season}
+\runsubsection{Space Tanks Invaders}
+\descript{| Awarded Best Game | Code Day}
+\location{January 2015 | Minneapolis, MN}
+\vspace{\topsep}
+\begin{tightemize}
+\item Fast paced, retro styled tanks game.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Bar Flow}
+\descript{| Awarded Third Place | Hack the Bar}
+\location{September 2015 | Urbana, IL}
+\begin{tightemize}
+\item Wrote Python server code and Android client code that controls hardware
+\item Reverse engineered the given sensor API in order to get real time updates. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Home Index}
+\descript{| Awarded Second Place | Connected Home Hackathon}
+\location{October 2015 | Urbana, IL}
+\begin{tightemize}
+\item Wrote an algorithm to model a family's daily life at home.
+\item Designed a simulator and simulated 11k+ data points in order to create a baseline for data comparison. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FacedIn}
+\descript{| HackPrinceton}
+\location{November 2015 | Princeton, New Jersey}
+\begin{tightemize}
+\item Built an Android app that takes a picture of your face, and uses facial recognition to detect and search for a corresponding LinkedIn profile. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{HackIllinois}
+\descript{| Staff | Software Team}
+\location{September 2015 - February 2016 | Urbana-Champaign, Illinois}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Current Projects}
+
+\runsubsection{Birdle}
+\descript{| Developer }
+\location{September 2015 – Present | Urbana, IL}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed an app that downloads and tags music onto an android device.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{QuadFace}
+\descript{| Developer}
+\location{September 2015 - Present | Urbana, IL}
+\begin{tightemize}
+\item Building an extendable API aimed at making quadcopter flight accessible 
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Center for Drug Design}
+\descript{| Research Intern}
+\location{June 2013 – July 2015 | Minneapolis, MN}
+\begin{tightemize}
+\item Participated in research, synthesis, and testing of HIV inhibiting drugs.
+\item Managed a chemical inventory and wrote optimized tools for sorting thousands of chemicals efficiently.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Math Modeling}
+\descript{| University of Minnesota}
+\location{July 2014 | Ithaca, NY}
+\begin{tightemize}
+\item Accumulated data about ridership for metro light rail lines in the Twin Cities.
+\item Created a mathematical model predicting profits for an arbitrary light rail line.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Jobs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Jobs and Volunteer Experience}
+\runsubsection{Minnesota HuaXia Chinese School}
+\descript{| Assistant Web Dev}
+\location{June 2015 – Present | Eden Prairie, MN}
+\begin{tightemize}
+\item Worked on front end design for MNHuaxia Chinese School's new webpage
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%2010     & National & Comp. Soc. of India's National Programming Contest\\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies} 
+
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+\end{minipage} 
+\end{document} \documentclass[]{article}
